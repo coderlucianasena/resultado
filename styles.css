@@ -1,0 +1,102 @@
+/* styles.css */
+
+/* Certifique-se de que o corpo da página tenha a cor de fundo desejada */
+body {
+    background-color: #000000 !important; /* Cor de fundo escura */
+    color: #ffffff; /* Cor do texto clara */
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden; /* Evita rolagem horizontal */
+    overflow-y: scroll;
+    padding: 10px; /* Margem do body */
+}
+
+/* Garante que o container principal ocupe o espaço disponível */
+.container {
+    max-width: 800px;
+}
+
+.text-light {
+    color: #414141 !important;
+}
+
+.btn-primary {
+    background-color: #1a73e8;
+    border-color: #1a73e8;
+}
+
+.btn-primary:hover {
+    background-color: #1558b0;
+    border-color: #1558b0;
+}
+
+.status-green {
+    color: #28a745; /* Cor verde */
+}
+
+.bg-dark { 
+    background-color: #e7e4ff !important; 
+}
+
+/* Estiliza o rodapé para ficar fixo na parte inferior */
+.footer {
+    color: #ffffff; /* Cor do texto */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8rem; /* Diminui o tamanho da fonte */
+}
+
+/* Ajusta o tamanho das logos */
+.logo-img {
+    max-height: 200px; /* Tamanho padrão das logos na versão desktop */
+    width: auto; /* Mantém a proporção da imagem */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Ajusta o tamanho da Logo 2 */
+.logo-2 {
+    max-height: 250px; /* Aumenta o tamanho da Logo 2 */
+    width: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estiliza o contêiner das logos */
+.logos-container {
+    background-color: #f8f9fa; /* Fundo branco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilos para os cartões */
+.card {
+    margin: 20px 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+    border: none;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos específicos para dispositivos móveis */
+@media (max-width: 768px) {
+    .logo-img {
+        max-height: 150px; /* Ajusta o tamanho das logos na versão mobile */
+        width: auto; /* Garante que a largura não ultrapasse a tela */
+    }
+    .logo-2 {
+        max-height: 200px; /* Aumenta o tamanho da Logo 2 na versão mobile */
+        width: auto;
+    }
+}
+
+/* Estilos específicos para dispositivos com resolução 375x667 */
+@media (max-width: 375px) and (max-height: 667px) {
+    .logo-img {
+        max-height: 200px; /* Ajusta o tamanho das logos para dispositivos 375x667 */
+        width: auto; /* Garante que a largura não ultrapasse a tela */
+    }
+    .logo-2 {
+        max-height: 250px; /* Ajusta o tamanho da Logo 2 para dispositivos 375x667 */
+        width: auto;
+    }
+
+}

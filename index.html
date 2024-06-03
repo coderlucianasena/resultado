@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado | Informática Básica</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark text-light d-flex flex-column min-vh-100">
+    <div class="container mt-5 flex-grow-1">
+        <!-- Logotipos na parte superior -->
+        <div class="logos-container row mb-4 justify-content-center">
+            <div class="col-4 text-center mb-3 mb-md-0">
+                <img src="/EDU.png" alt="Logo 1" class="img-fluid logo-img">
+            </div>
+            <div class="col-4 text-center mb-3 mb-md-0">
+                <img src="/logo-centro-blue.png" alt="Logo 2" class="img-fluid logo-img logo-2">
+            </div>
+            <div class="col-4 text-center mb-3 mb-md-0">
+                <img src="/FUTU.png" alt="Logo 3" class="img-fluid logo-img">
+            </div>
+        </div>
+        <!-- Formulário de Login -->
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card bg-light text-dark p-4">
+                    <div class="card-body">
+                        <h2 class="text-center">Resultado</h2>
+                        <p class="text-center">Informática Básica</p>
+                        <p class="text-center">Turma de Abril de 2024</p>
+                        <form id="searchForm">
+                            <div class="form-group">
+                                <label for="lastName">Digite seu sobrenome:</label>
+                                <input type="text" id="lastName" class="form-control" placeholder="Sobrenome">
+                            </div>
+                            <button id="searchButton" type="button" class="btn btn-primary btn-block">Buscar Nota</button>
+                        </form>
+                        <div id="result" class="mt-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer fixo na parte inferior -->
+    <footer class="footer text-light text-center py-3">
+        <p>&copy; 2024 Luciana Sena. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
